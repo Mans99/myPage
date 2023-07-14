@@ -32,11 +32,13 @@ module.exports = {
       }
     },
     colors: {
+      'black' : '#000000',
       'transparent' : 'bg-transparent',
       'primary' : '#202D40',
       'secondary': '#32455B',
       'third' : '#9DB2BF',
-      'fourth' : '#DDE6ED'
+      'fourth' : '#DDE6ED',
+      'focus' : '#253347'
     }
   },
   corePlugins: {
