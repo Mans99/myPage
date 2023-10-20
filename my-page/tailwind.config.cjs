@@ -39,6 +39,16 @@ module.exports = {
       'third' : '#9DB2BF',
       'fourth' : '#DDE6ED',
       'focus' : '#253347'
+    },
+    screens: {
+      'me' : '1440px',
+      'mes' : '1100px',
+      'mexs' : '750px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     }
   },
   corePlugins: {

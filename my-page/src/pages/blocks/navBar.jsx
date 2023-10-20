@@ -1,18 +1,33 @@
 import React from 'react'
 import Mail from '../buttons/mail'
 import Icon from '../../assets/logo.png'
+import { Link, Outlet } from 'react-router-dom'
 
 export default function navBar() {
     return (
-        <div name="menu" class="flex justify-between bg-gradient-to-t from-primary to-secondary w-screen" >
-            <div className="flex h-40 p-8 text-fourth ">
-                <img className="h-20" src={Icon} alt="" />
+            <div name="menu" className="flex justify-between bg-gradient-to-t from-primary to-secondary w-screen" >
+                <div className="flex h-50 py-10 pl-14 text-fourth">
+                    <nav>
+                        <ul>
+                            <li>
+                                <Link to="/" className='h-28'>
+                                    <img className="h-28" src={Icon} alt="" />
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div className="flex w-1/2 items-center justify-end space-x-4 pr-5 md:pr-10">
+                    <Link to="/projects" className="text-fourth text-xl hover:text-third">
+                        Projects
+                    </Link>
+                    <Mail />
+                    <Link to="/" className="text-fourth text-xl hover:text-third">
+                        About Me
+                    </Link>
+
+                    <div />
+                </div>
             </div>
-            <div class="flex flex-row p-8 py-10">
-                <div className="px-2 my-4 text-fourth text-lg hover:text-third">Projects</div>
-                <Mail />
-                <div className="px-2 my-4 text-fourth text-lg hover:text-third">About me</div>
-            </div>
-        </div>
     )
 }
