@@ -11,30 +11,21 @@ export default function cards() {
         <>
             {cards.map((i) => (
                 <div key={i}>
-                    <div className="group perspective cursor-pointer " >
-                        <div className="relative preserve-3d group-hover:my-rotate-y-180 duration-700 p-1 h-[440px] w-[330px]">
-                            <div className="absolute backface-hidden rounded-lg  object-cover">
-                                <div className='relative'>
-                                    <img className="rounded-lg inset-0" src={Me} alt="" />
+                    <div className="group perspective" >
+                        <section class="mx-auto w-fit p-1 group ">
+                            <div class="w-[330px] h-fit">
+                                <div class="relative overflow-hidden">
+                                    <img class="h-96 w-full object-cover rounded-lg" src={Me} alt=""/>
                                     <p className='absolute bottom-6 left-6 text-4xl text-fourth text-ellipsis'>Hej {i}</p>
+                                        <div class="absolute rounded-lg h-full w-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                            <Link to="/individual" state={i} class="bg-secondary hover:bg-focus rounded-lg text-fourth py-2 px-5 ">Read more</Link>
+                                        </div>
                                 </div>
                             </div>
-                            <div className="absolute my-rotate-y-180 backface-hidden bg-fourth rounded-lg overflow-hidden p-1 h-[440px] w-[330px]">
-                                    <div className="flex flex-col items-center justify-center text-gray-800">
-                                        <h1 className="text-3xl font-semibold">The King's Man</h1>
-                                        <p className="">9.0 Rating</p>
-                                        <p className=''>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                                            itaque assumenda saepe animi maxime libero non quasi, odit natus
-                                        </p>
-                                        <Link to="/individual" className="text-md h-10 w-20 text-fourth pr-10 font-semibold border rounded bg-secondary  hover:bg-focus" state={i}> Test </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </section>
                     </div>
-            ))
-            }
+                </div>
+            ))}
         </>
     );
 
