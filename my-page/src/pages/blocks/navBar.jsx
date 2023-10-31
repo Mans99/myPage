@@ -11,7 +11,7 @@ export default function navBar() {
                         <ul>
                             <li>
                                 <Link to="/" className='h-28'>
-                                    <img className="h-28" src={Icon} alt="" />
+                                    <img className="h-16 md:h-28" src={Icon} alt="" />
                                 </Link>
                             </li>
                         </ul>

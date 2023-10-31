@@ -3,6 +3,7 @@ import Me from "./../assets/me.png"
 import 'reactjs-popup/dist/index.css'
 import Download from "./buttons/download"
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Link, Outlet } from 'react-router-dom'
 
 
 const Home = () => {
@@ -13,13 +14,15 @@ const Home = () => {
 
     return (
         <div className="bg-primary flex max-h-screen w-screen">
-            <div className="flex space-x-16 sm:space-x-0 flex-col sm:justify-center items-center pt-20 md:flex-row text-center w-full h-fit">
-                <div className="flex sm:justify-center justify-end w-full h-[450px] ">
-                    <img alt="name" src={Me} className="object-cover w-[350px] lg:w-[450px] h-[350px] lg:h-full rounded-full" />
+            <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-16 md:pt-5 pt-0 text-center w-full h-fit">
+                <div className="flex md:justify-end justify-center w-full md:h-[450px] h-[300px]">
+                    <div className="flex flex-col justify-center h-full w-fit">
+                        <img alt="name" src={Me} className="object-cover w-[300px] h-[300px]  md:w-[350px] lg:w-[450px] md:h-[350px] lg:h-full rounded-full" />
+                    </div>
                 </div>
-                <div className="flex pt-5 items-center text-left sm:text-center flex-col w-full ">
-                    <text className="font-bold text-fourth lg:text-8xl sm:text-7xl text-5xl">Hello!</text>
-                    <text className="font-bold text-fourth pb-5 lg:text-8xl sm:text-7xl text-5xl">I'm Måns,</text>
+                <div className="flex pt-10 sm:items-center sm:text-center  md:items-start md:text-left  flex-col w-full ">
+                    <p className="font-bold text-fourth lg:text-8xl sm:text-7xl text-5xl">Hello,</p>
+                    <p className="font-bold text-fourth pb-5 lg:text-8xl sm:text-7xl text-5xl">I'm Måns!</p>
                     <h1>
                         <div>
                             <span className="lg:text-4xl sm:text-2xl text-lg text-fourth">Software Developer,</span>
@@ -30,7 +33,9 @@ const Home = () => {
                         </span>
                     </h1>
                     <div className="flex py-5 items-center justify-center flex-row space-x-4">
-                        <a rel="noopener noreferrer" href="#" className="px-8 py-3 lg:text-2xl sm:text-xl text-lg  text-fourth font-semibold border rounded bg-focus hover:bg-secondary">Projects</a>
+                    <Link to="/projects" className="px-8 py-3 lg:text-2xl sm:text-xl text-lg  text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
+                        Projects
+                    </Link>
                         <Download />
                     </div>
                 </div>

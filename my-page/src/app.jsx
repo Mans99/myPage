@@ -4,6 +4,7 @@ import Home from './pages/home'
 import Projects from './pages/projects'
 import NavBar from './pages/blocks/navBar'
 import ErrorPage from './pages/errorPage';
+import Individual from './pages/individual'
 
 export default function app() {
   return (
@@ -12,6 +13,7 @@ export default function app() {
     <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
+        <Route path='/individual' element={<Individual/>} />
         <Route path='*' element={<ErrorPage/>}/>
     </Routes>
     </>

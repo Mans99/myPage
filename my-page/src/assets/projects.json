@@ -1,0 +1,26 @@
+{
+    "Personal Wabsite" : {
+        "description": "A portfolio website to show my different projects. The goal was to produce a website with universal design which was easy to navigate and at the same time showcased my skills.",
+        "pictures": [],
+        "git": "",
+        "technologies":"React+Vite",
+        "name": "Personal Website",
+        "demo": ""
+    },
+    "Wild West Duel" : {
+        "description": "An android game produced as a project for school. The goal was to use the different sensors a phone has in order to interact with the application. Wild West Duel is a game where you are in a gun duel using your phone as the gun, you can challenge your friends online as well.",
+        "pictures": [],
+        "git": "",
+        "technologies": ["Java", "Android", "Fire Base"],
+        "name": "Wild West Duel",
+        "demo": ""
+    },
+    "" : {
+        "description": "",
+        "pictures": [],
+        "git": "",
+        "technologies":"",
+        "name": "",
+        "demo": ""
+    }
+}
