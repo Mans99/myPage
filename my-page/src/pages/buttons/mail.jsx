@@ -3,7 +3,7 @@ import React from 'react'
 export default function mail() {
     const Mailto = ({ email, subject, body, children }) => {
         return (
-          <a className="text-fourth text-xl hover:text-third" href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`}>{children}</a>
+          <a className="hover:text-third" href={`mailto:${email}?subject=${encodeURIComponent(subject) || ''}&body=${encodeURIComponent(body) || ''}`}>{children}</a>
         );
       };
       

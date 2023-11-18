@@ -5,14 +5,15 @@ import Download from "./buttons/download"
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { Link, Outlet } from 'react-router-dom'
 
-
 const Home = () => {
     const [text] = useTypewriter({
-        words: ['photografer', 'food lover', 'vikings fan', 'nerd', 'lover of Sara Saber'],
+        words: ['photografer', 'food lover', 'vikings fan', 'coffee nerd', 'amateur mixologist', 'lover of Sara Saber'],
         loop: {},
     });
-
+    
     return (
+
+
         <div className="bg-primary flex max-h-screen w-screen">
             <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-16 md:pt-5 pt-0 text-center w-full h-fit">
                 <div className="flex md:justify-end justify-center w-full md:h-[450px] h-[300px]">
@@ -36,7 +37,9 @@ const Home = () => {
                     <Link to="/projects" className="px-8 py-3 lg:text-2xl sm:text-xl text-lg  text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
                         Projects
                     </Link>
+                    <div className="px-8 py-3 lg:text-2xl sm:text-xl text-lg text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
                         <Download />
+                        </div>
                     </div>
                 </div>
             </div>

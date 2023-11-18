@@ -11,8 +11,8 @@ export default function individual() {
 
 
     useEffect(() => {
-
-    }, []);
+        window.scrollTo(0, 0)
+      }, [])
 
 
 
