@@ -18,9 +18,9 @@ export default function cards() {
                                 <div class="relative overflow-hidden">
                                     <img class="h-96 w-full object-cover opacity-90 rounded-lg" src={Background} alt="" />
                                     <p className='absolute bottom-6 left-6 text-4xl text-fourth text-ellipsis'>Hej {i}</p>
-                                    <div class="absolute rounded-lg h-full w-full bg-black/20 flex -bottom-10 group-hover:bottom-0 opacity-0 justify-center items-center group-hover:opacity-100 transition-all duration-600">
-                                        <Link to="/individual" state={i} class="bg-focus hover:bg-primary -bottom-10 rounded-lg text-fourth mt-48 py-2 px-5 ">Read more</Link>
-                                    </div>
+                                    
+                                        <Link to="/individual" state={i} class="absolute rounded-lg h-full w-full bg-black/20 flex -bottom-10 group-hover:bottom-0 opacity-0 justify-center items-center group-hover:opacity-100 transition-all duration-600"/>
+                                    
                                 </div>
                             </div>
                         </section>

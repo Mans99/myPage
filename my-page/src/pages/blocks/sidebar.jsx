@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom'
-import Mail from '../buttons/mail'
 import Download from '../buttons/download';
 
 
@@ -25,28 +24,28 @@ export default function sidebar() {
 
   return (
     <>
-      <div className={`top-0 right-0 z-10 w-[250px] bg-primary/95  text-white fixed h-full  ${showMenu ? 'translate-x-0' : 'translate-x-full'} transition-all ease-in-out duration-300`}>
-        <div className='flex flex-col space-y-5 h-full w-full mx-5 mt-28'>
-          <Link to="/" className="hover:text-third" onClick={()=>setShowMenu(false)}>
+     <div className={`top-0 right-0 fixed z-7 w-full h-full opacity-100 ${showMenu ? 'translate-x-0' : 'translate-x-full'}`} onClick={() => setShowMenu(!showMenu)}></div>
+      <div className={`top-0 right-0 z-10 w-[250px] bg-primary/95 text-3xl text-white fixed h-full  ${showMenu ? 'translate-x-0' : 'translate-x-full'} transition-all ease-in-out duration-300`}>
+        <div className='flex flex-col space-y-5 h-full w-fit mx-5 mt-28'>
+          <Link to="/" className="hover:text-third cursor-pointer" onClick={()=>setShowMenu(false)}>
           Home
         </Link>
-          <Link to="/projects" className="hover:text-third" onClick={()=>setShowMenu(false)}>
+          <Link to="/projects" className="hover:text-third cursor-pointer" onClick={()=>setShowMenu(false)}>
             Projects
           </Link>
-          <Mail />
-          <Link to="/" className="hover:text-third" onClick={()=>setShowMenu(false)} >
+          <Link to="/" className="hover:text-third cursor-pointer" onClick={()=>setShowMenu(false)} >
             About Me
           </Link>
-          <div className="hover:text-third">
+          <div className="hover:text-third cursor-pointer">
             <Download />
           </div>
         </div>
       </div>
 
-      {width < 760 ? <>
+      {width < 900 ? <>
         <div className='flex top-12 right-10 z-10 hover:text-fourth/80 cursor-pointer' onClick={() => setShowMenu(!showMenu)}>
-          {showMenu ? <div className='fixed  z-30 flex items-center cursor-pointer right-10 top-12'>X</div> : <svg
-      className="fixed  z-30 flex items-center cursor-pointer right-10 top-12"
+          {showMenu ? <div className='fixed  z-30 flex items-center cursor-pointer right-10 top-12 text-2xl'>X</div> : <svg
+      className="fixed  z-30 flex items-center cursor-pointer right-10 top-12 md:mt-8"
       fill="#DDE6ED"
       viewBox="0 0 100 80"
       width="40"

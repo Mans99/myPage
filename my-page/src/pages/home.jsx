@@ -5,43 +5,47 @@ import Download from "./buttons/download"
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { Link, Outlet } from 'react-router-dom'
 
+
 const Home = () => {
     const [text] = useTypewriter({
-        words: ['photografer', 'food lover', 'vikings fan', 'coffee nerd', 'amateur mixologist', 'lover of Sara Saber'],
+        words: ['Photografer', 'Food lover', 'Vikings fan', 'Coffee nerd', 'Amateur mixologist', 'Lover of Sara Saber'],
         loop: {},
     });
-    
+
     return (
 
 
-        <div className="bg-primary flex max-h-screen w-screen">
-            <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-16 md:pt-5 pt-0 text-center w-full h-fit">
-                <div className="flex md:justify-end justify-center w-full md:h-[450px] h-[300px]">
-                    <div className="flex flex-col justify-center h-full w-fit">
-                        <img alt="name" src={Me} className="object-cover w-[300px] h-[300px]  md:w-[350px] lg:w-[450px] md:h-[350px] lg:h-full rounded-full" />
-                    </div>
-                </div>
-                <div className="flex pt-10 sm:items-center sm:text-center  md:items-start md:text-left  flex-col w-full ">
-                    <p className="font-bold text-fourth lg:text-8xl sm:text-7xl text-5xl">Hello,</p>
-                    <p className="font-bold text-fourth pb-5 lg:text-8xl sm:text-7xl text-5xl">I'm Måns!</p>
-                    <h1>
-                        <div>
-                            <span className="lg:text-4xl sm:text-2xl text-lg text-fourth">Software Developer,</span>
-                        </div>
-                        <span className="lg:text-4xl sm:text-2xl text-lg text-fourth sm:text-left">Designer and {text}</span>
-                        <span className="text-fourth lg:text-4xl sm:text-2xl text-lg">
-                            <Cursor />
-                        </span>
-                    </h1>
-                    <div className="flex py-5 items-center justify-center flex-row space-x-4">
-                    <Link to="/projects" className="px-8 py-3 lg:text-2xl sm:text-xl text-lg  text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
-                        Projects
-                    </Link>
-                    <div className="px-8 py-3 lg:text-2xl sm:text-xl text-lg text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
-                        <Download />
+        <div className="bg-primary flex justify-center max-h-screen w-screen">
+            <div className="flex flex-col items-center w-full h-full">
+                <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-16 md:pt-5 pt-0 text-center w-full h-fit">
+                    <div className="flex md:justify-end justify-center w-full md:h-[450px] h-[300px]">
+                        <div className="flex flex-col justify-center h-full w-fit">
+                            <img alt="name" src={Me} className="object-cover w-[300px] h-[300px]  md:w-[350px] lg:w-[450px] md:h-[350px] lg:h-full rounded-full" />
                         </div>
                     </div>
+                    <div className="flex pt-10 sm:items-center sm:text-center  md:items-start md:text-left  flex-col w-full ">
+                        <p className="font-bold text-fourth lg:text-8xl sm:text-7xl text-5xl">Hello,</p>
+                        <p className="font-bold text-fourth pb-5 lg:text-8xl sm:text-7xl text-5xl">I'm Måns!</p>
+                        <h1>
+                            <div>
+                                <span className="lg:text-4xl sm:text-2xl text-lg text-fourth">Software Developer,</span>
+                            </div>
+                            <span className="lg:text-4xl sm:text-2xl text-lg text-fourth sm:text-left">Designer and {text}</span>
+                            <span className="text-fourth lg:text-4xl sm:text-2xl text-lg">
+                                <Cursor />
+                            </span>
+                        </h1>
+                        <div className="flex py-5 items-center justify-center flex-row space-x-4">
+                            <Link to="/projects" className="px-8 py-3 lg:text-2xl sm:text-xl text-lg  text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
+                                Projects
+                            </Link>
+                            <div className="px-8 py-3 lg:text-2xl sm:text-xl text-lg text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
+                                <Download />
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
     )
