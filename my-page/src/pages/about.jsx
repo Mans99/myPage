@@ -12,9 +12,11 @@ export default function about() {
             <h1 className="flex justify-center w-full text-8xl text-fourth/90 pt-10"> Who am I?</h1>
             <div className='flex flex-col justify-center items-center w-full h-full pt-10'>
                 <div className='flex justify-center items-center w-2/3 h-fit'>
-                    <text className='text-xl text-center text-fourth'>
-                        I am a 24 year old swede currently trying to survive my fourth year of college. 
-                 </text>
+                    <p className='text-xl text-center text-fourth'>
+                        {`I am a 24 year old swede currently trying to survive my fourth year of college. \n There I study to obtain a M.Sc Information- & Communication technologies degree with an emphasis on Software development.`}
+
+
+                 </p>
                 </div>
             </div>
         </div>
