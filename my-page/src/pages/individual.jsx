@@ -1,18 +1,33 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
-import Me from "./../assets/me.png"
 
 export default function individual() {
-    const [photo, setPhoto] = useState({});
-    const [description, setDescription] = useState('Hello');
     const location = useLocation();
+    const [width, setWidth] = useState(window.innerWidth);
+    const updateDimensions = () => {
+        setWidth(window.innerWidth);
+    }
 
-    let list = [0,1,2,3,4,5,6,7]
+    useEffect(() => {
+        window.addEventListener("resize", updateDimensions);
+        return () => window.removeEventListener("resize", updateDimensions);
+    }, []);
+
 
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
+
+    function line() {
+        if (width > 768) {
+            return "____________________________________________"
+        } else if (width > 640) {
+            return "__________________________________"
+        } else {
+            return "__________________________"
+        }
+    }
 
 
 
@@ -21,25 +36,36 @@ export default function individual() {
 
     return (
         <div className='flex flex-col items-center h-1/1'>
-            <h1 className='text-fourth text-8xl pb-10'> {description} {location.state}</h1>
-            <div className='flex md:flex-row flex-col items-center py-10 w-2/3 h-fit'>
-                <div className='flex sm:flex-row flex-col items-center w-full h-fit justify-between'>
-                    <p className='lg:text-4xl md:text-3xl sm:text-2xl text-3xl p-2 sm:p-0 text-third'>Technologies</p>
-                    <p className='lg:text-4xl md:text-3xl sm:text-2xl text-3xl p-2 sm:p-0 text-third'>Language</p>
-                    <p className='lg:text-4xl md:text-3xl sm:text-2xl text-3xl p-2 sm:p-0 text-third'>placeholder</p>
+            <h1 className='text-fourth text-center md:w-3/4 w-full md:text-7xl sm:text-6xl text-5xl leading-normal mt-10'>{location.state.name}</h1>
+            <div className='text-xl text-fourth/40 m-5'>{line()}</div>
+            <div className='flex md:flex-row flex-col items-center py-10 sm:w-2/3 w-5/6 h-fit'>
+                <div className='grid lg:grid-cols-3 grid-cols-2 gap-5 items-center w-full h-fit'>
+                    <div className='text-center'>
+                        <p className='lg:text-4xl md:text-3xl text-2xl text-third'>Technologies</p>
+                        <p className='text-fourth text-xl sm:mt-2 text-md'>{location.state.technologies.join(", ")}</p>
+                    </div>
+                    <div className='text-center'>
+                        <p className='lg:text-4xl md:text-3xl text-2xl text-third'>Language</p>
+                        <p className='text-fourth text-xl sm:mt-2 text-md'>{ } hello</p>
+                    </div>
+                    <div className='text-center'>
+                        <p className='lg:text-4xl md:text-3xl text-2xl text-third'>Placeholder</p>
+                        <p className='text-fourth sm:text-xl text-lg sm:mt-2 text-md'>{ }hello </p>
+                    </div>
+
                 </div>
             </div>
             <div className="w-2/3 h-fit sm:p-10 p-5">
-                    <p className='text-fourth/80 text-center text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim gravida mi, in facilisis velit aliquet eu. Integer sagittis tempus ipsum, a semper ligula dictum sit amet. Nulla fringilla tempor metus, in porta augue imperdiet non. Quisque ut nunc eu arcu ornare viverra. Mauris laoreet felis sit amet eleifend pharetra. In rhoncus massa ut fringilla vestibulum. Integer est sapien, laoreet id mi sit amet, faucibus consectetur nisi. Vivamus eu fermentum sapien, ultrices laoreet nisl. Nullam lacinia consectetur leo, nec gravida sapien rhoncus vel. Fusce in tortor odio. Etiam at hendrerit felis, in sodales est. Aliquam ut erat eu justo elementum ornare at maximus dolor. Cras ultricies tempus tortor, bibendum hendrerit mauris. Donec id condimentum odio. Maecenas vitae nisl nulla. Mauris quis eros eu eros faucibus aliquet vitae a mauris.
-
-Maecenas lacus est, bibendum non vulputate in, posuere sed est. Curabitur ullamcorper mi sed gravida pretium. Maecenas iaculis justo vitae quam tempus, sit amet venenatis ex tincidunt. Vivamus sem turpis, fermentum at pulvinar in, luctus sit amet orci. Etiam quis convallis purus. Nam massa libero, faucibus vitae convallis ac, viverra ut risus. Aenean mollis massa convallis sapien dignissim, eget euismod dolor vulputate. Cras dictum nisl sit amet consequat sodales. Vestibulum ligula.</p>
-                </div>
-                <div className='grid w-fit h-fit lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-1 justify-'>
-                    {list.map((i) => 
+                <p className='text-fourth text-center text-xl'>{location.state.description}</p>
+            </div>
+            <div className='flex flex-col h-fit md:w-full w-fit items-center justify-center'>
+            <div className='grid md:w-4/5 w-full h-fit lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-1'>
+                {location.state.pictures.map((i) =>
                     <div key={i}>
-                        <img src={Me} alt="" className='max-h-72 p-1'></img> 
+                        <img src={`${location.state.src}${i}`} alt="" className='h-[350px] w-[250px] p-1 object-cover rounded-lg'></img>
                     </div>)}
-                </div>
+            </div>
+            </div>
         </div>
     )
 }

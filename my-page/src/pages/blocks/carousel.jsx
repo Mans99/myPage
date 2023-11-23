@@ -16,7 +16,7 @@ export default class Function extends Component{
       };
 
   return (
-    <div class="w-full h-100 bg-secondary lg:max-w-[800px] md:m-2"> 
+    <div className="w-full h-100 bg-secondary lg:max-w-[800px] md:m-2"> 
         <h2>Multiple Rows</h2>
         <Slider {...settings}>
             <Card/>

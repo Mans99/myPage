@@ -8,7 +8,7 @@ import { Link, Outlet } from 'react-router-dom'
 
 const Home = () => {
     const [text] = useTypewriter({
-        words: ['Photografer', 'Food lover', 'Vikings fan', 'Coffee nerd', 'Amateur mixologist', 'Lover of Sara Saber'],
+        words: ['Photografer', 'Foodie', 'Vikings fan', 'Coffee nerd', 'Amateur mixologist', 'Sourdough dad', 'Half half-marathon runner', 'Home cook'],
         loop: {},
     });
 
@@ -18,14 +18,13 @@ const Home = () => {
         <div className="bg-primary flex justify-center max-h-screen w-screen">
             <div className="flex flex-col items-center w-full h-full">
                 <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-16 md:pt-5 pt-0 text-center w-full h-fit">
-                    <div className="flex md:justify-end justify-center w-full md:h-[450px] h-[300px]">
+                    <div className="flex md:justify-end justify-center w-full md:h-[450px] h-[285px]">
                         <div className="flex flex-col justify-center h-full w-fit">
-                            <img alt="name" src={Me} className="object-cover w-[300px] h-[300px]  md:w-[350px] lg:w-[450px] md:h-[350px] lg:h-full rounded-full" />
+                            <img alt="name" src={Me} className="object-cover w-[285px] h-[285px]  md:w-[350px] lg:w-[450px] md:h-[350px] lg:h-full rounded-full" />
                         </div>
                     </div>
-                    <div className="flex pt-10 sm:items-center sm:text-center  md:items-start md:text-left  flex-col w-full ">
-                        <p className="font-bold text-fourth lg:text-8xl sm:text-7xl text-5xl">Hello,</p>
-                        <p className="font-bold text-fourth pb-5 lg:text-8xl sm:text-7xl text-5xl">I'm Måns!</p>
+                    <div className="flex sm:pt-10 pt-5 sm:items-center sm:text-center  md:items-start md:text-left  flex-col w-full ">
+                        <p className="font-bold text-fourth lg:text-8xl sm:text-6xl mb-5 text-5xl whitespace-pre-wrap">{`Hello, \nI'm Måns!`}</p>
                         <h1>
                             <div>
                                 <span className="lg:text-4xl sm:text-2xl text-lg text-fourth">Software Developer,</span>
@@ -35,7 +34,7 @@ const Home = () => {
                                 <Cursor />
                             </span>
                         </h1>
-                        <div className="flex py-5 items-center justify-center flex-row space-x-4">
+                        <div className="flex pt-5 items-center justify-center flex-row space-x-4">
                             <Link to="/projects" className="px-8 py-3 lg:text-2xl sm:text-xl text-lg  text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
                                 Projects
                             </Link>
