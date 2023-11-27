@@ -43,7 +43,6 @@ export default function sidebar() {
             <a className="w-fit h-fit hover:text-third" href={`mailto:${"mans.englund@live.se"}?subject=${encodeURIComponent("I'd like to connect") || ''}&body=${encodeURIComponent('') || ''}`}><FontAwesomeIcon icon={faEnvelope} /> Mail</a>
             <a className="w-fit h-fit hover:text-third" href="https://www.linkedin.com/in/mans-englund/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a>
             <a className="w-fit h-fit hover:text-third" href="https://github.com/Mans99" target="_blank"><FontAwesomeIcon icon={faGithub} /> Github</a>
-            <a className="w-fit h-fit hover:text-third" href="https://gitlab.com/Mans99" target="_blank"><FontAwesomeIcon icon={faGitlab} /> GitLab</a>
           </div>
         </div>
 
@@ -54,5 +53,3 @@ export default function sidebar() {
     </>
   )
 }
-
-//

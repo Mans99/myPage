@@ -35,10 +35,10 @@ const Home = () => {
                             </span>
                         </h1>
                         <div className="flex pt-5 items-center justify-center flex-row space-x-4">
-                            <Link to="/projects" className="px-8 py-3 lg:text-2xl sm:text-xl text-lg  text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
+                            <Link to="/projects" className="px-8 py-3 lg:text-2xl sm:text-xl text-lg cursor-pointer text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
                                 Projects
                             </Link>
-                            <div className="px-8 py-3 lg:text-2xl sm:text-xl text-lg text-fourth font-semibold border rounded bg-focus hover:bg-secondary">
+                            <div className="px-8 py-3 lg:text-2xl sm:text-xl text-lg text-fourth cursor-pointer font-semibold border rounded bg-focus hover:bg-secondary">
                                 <Download />
                             </div>
                         </div>

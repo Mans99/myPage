@@ -16,7 +16,7 @@ export default function navBar() {
                     <nav>
                         <ul>
                             <li>
-                                <Link to="/" className='h-28'>
+                                <Link to="/" className='h-28 cursor-pointer'>
                                     <img className="h-16 md:h-28" src={Icon} alt="" />
                                 </Link>
                             </li>

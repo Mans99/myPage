@@ -3,7 +3,7 @@ import React from 'react'
 export default function download() {
   return (
     <>
-    <a className='h-fit hover:text-third' href={"src/assets/CV_english-3.pdf"} download="Mans_cv" target='_blank' >CV</a>
+    <a className='h-fit hover:text-third' href={"src/assets/cv.pdf"} download="Mans_cv" target='_blank' >CV</a>
     </>
   )
 }
