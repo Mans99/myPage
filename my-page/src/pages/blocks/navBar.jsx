@@ -10,8 +10,9 @@ export default function navBar() {
 
 
     return (
-        <>
-            <div name="menu" className="flex justify-between h-fit bg-gradient-to-t from-primary to-secondary min-w-full" >
+        <>  
+            <div className='w-full h-20 translate-y-[-79px] fixed top-0 bg-secondary'/>
+            <div className="flex justify-between h-fit bg-gradient-to-t from-primary to-secondary min-w-full" >
                 <div className="flex h-50 py-10 sm:pl-14 sm:pr-0 pl-10 pr-4 text-fourth">
                     <nav>
                         <ul>

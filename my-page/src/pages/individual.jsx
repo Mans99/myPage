@@ -35,7 +35,7 @@ export default function individual() {
 
     return (
         <>
-        <Link className='text-fourth/40 items-center cursor-pointer hover:text-fourth ml-16 md:mt-4 md:text-5xl text-4xl' to={'/projects' }><FontAwesomeIcon icon={faArrowLeft}/></Link>
+        <Link className='text-fourth/40 items-center cursor-pointer hover:text-fourth sm:ml-16 ml-8 md:mt-4 md:text-5xl text-4xl' to={'/projects' }><FontAwesomeIcon icon={faArrowLeft}/></Link>
        <div className='flex flex-col items-center h-1/1'>
             <h1 className='text-fourth text-center md:w-3/4 w-full lg:text-8xl md:text-7xl sm:text-6xl text-5xl leading-normal'>{location.state.name}</h1>
             <div className='text-xl text-fourth/40 m-5'>{line()}</div>
@@ -57,7 +57,7 @@ export default function individual() {
                 <a href={location.state.git} target="_blank"><FontAwesomeIcon icon={faGithub} /> Github</a>
             </div>
             <div className='flex flex-col h-fit pt-5 md:w-full w-fit items-center justify-center'>
-                <div className='grid md:w-fit w-fit h-fit items-center lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-1'>
+                <div className='grid md:w-fit w-fit h-fit items-center lg:grid-cols-4 md:grid-cols-3 sm: grid-col-2 grid-cols-1 gap-1'>
                     {location.state.pictures.map((i) =>
                         <div key={i}>
                             <img src={`${location.state.src}${i}`} alt="" className='h-[350px] w-[250px] m-1 object-cover border border-black/10 shadow-sm rounded-lg' />
