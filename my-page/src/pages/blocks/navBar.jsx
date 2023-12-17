@@ -24,7 +24,7 @@ export default function navBar() {
                     </nav>
                 </div>
                 
-                <div className="flex flex-col w-1/2 text-fourth justify-center">
+                <div className="flex flex-col w-1/2 text-fourth sm:pl-0 sm:justify-center justify-start pl-5">
                     <Sidebar/>
                 </div>
             </div>
