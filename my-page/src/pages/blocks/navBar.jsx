@@ -11,8 +11,8 @@ export default function navBar() {
 
     return (
         <>
-            <div name="menu" className="flex justify-between h-fit bg-gradient-to-t from-primary to-secondary w-screen" >
-                <div className="flex h-50 py-10 pl-14 text-fourth">
+            <div name="menu" className="flex justify-between h-fit bg-gradient-to-t from-primary to-secondary min-w-full" >
+                <div className="flex h-50 py-10 sm:pl-14 sm:pr-0 pl-10 pr-4 text-fourth">
                     <nav>
                         <ul>
                             <li>
@@ -24,7 +24,7 @@ export default function navBar() {
                     </nav>
                 </div>
                 
-                <div className="flex flex-col w-1/2 text-fourth sm:pl-0 sm:justify-center justify-start pl-5">
+                <div className="flex flex-col w-1/2 text-fourth sm:pl-0 sm:justify-center justify-start pl-2">
                     <Sidebar/>
                 </div>
             </div>

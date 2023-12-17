@@ -9,7 +9,7 @@ export default function about() {
                     <img alt="name" src={Me} className="object-cover h-full w-[250px] rounded-full" />
                 </div>
             </div>
-            <h1 className="flex justify-center w-full text-8xl text-fourth/90 pt-7"> Who am I?</h1>
+            <h1 className="flex justify-center w-full sm:text-8xl text-6xl text-fourth/90 pt-7"> Who am I?</h1>
             <div className='flex flex-col justify-center items-center w-full h-full pt-7'>
                 <div className='flex justify-center items-center w-2/3 h-fit'>
                     <p className='text-xl text-center mb-5 text-fourth whitespace-pre-wrap'>
