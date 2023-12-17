@@ -6,7 +6,7 @@ export default function about() {
         <div>
             <div className="flex justify-center w-full md:h-[250px] h-[200px]">
                 <div className="flex flex-col justify-center h-full w-fit">
-                    <img alt="name" src={Me} className="object-cover h-full w-[200px] rounded-full" />
+                    <img alt="name" src={Me} className="object-cover h-full md:w-[250px] w-[200px] rounded-full" />
                 </div>
             </div>
             <h1 className="flex justify-center w-full sm:text-8xl text-6xl text-fourth/90 pt-7"> Who am I?</h1>
