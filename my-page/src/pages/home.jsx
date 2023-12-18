@@ -7,6 +7,10 @@ import { Link, Outlet } from 'react-router-dom'
 
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const [text] = useTypewriter({
         words: ['Photografer', 'Foodie', 'Vikings fan', 'Coffee nerd', 'Amateur mixologist', 'Sourdough dad', 'Half half-marathon runner', 'Home cook'],
         loop: {},
@@ -15,7 +19,7 @@ const Home = () => {
     return (
 
 
-        <div className="bg-primary flex justify-center max-h-screen w-screen">
+        <div className="flex justify-center max-h-screen w-screen">
             <div className="flex flex-col items-center w-full h-full">
                 <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-16 md:pt-5 pt-0 text-center w-full h-fit">
                     <div className="flex md:justify-end justify-center w-full md:h-[450px] h-[200px]">

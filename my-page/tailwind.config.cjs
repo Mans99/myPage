@@ -34,11 +34,11 @@ module.exports = {
     colors: {
       'black' : '#000000',
       'transparent' : 'bg-transparent',
-      'primary' : '#202D40',
+      'primary' : '#1A2940',
       'secondary': '#32455B',
-      'third' : '#9DB2BF',
+      'third' : '#32455B',
       'fourth' : '#DDE6ED',
-      'focus' : '#253347'
+      'focus' : '#1B2A41'
     },
     screens: {
       'me' : '1440px',

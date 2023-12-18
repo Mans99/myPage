@@ -1,6 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import Grid from './blocks/grid'
 export default function projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, [])
+
 
   return (
     <>

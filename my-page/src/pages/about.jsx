@@ -1,7 +1,12 @@
 import React from 'react'
 import Me from './../assets/me.png'
+import { useEffect } from 'react'
 
 export default function about() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div>
             <div className="flex justify-center w-full md:h-[250px] h-[200px]">

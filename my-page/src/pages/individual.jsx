@@ -43,7 +43,7 @@ export default function individual() {
                 <div className={`grid ${Object.keys(location.state.technologies).length % 2 == 0 ? '' : 'lg:grid-cols-3'} grid-cols-2 gap-5 items-center w-full h-fit`}>
                     {Object.keys(location.state.technologies).map((tech) =>
                         <div className='text-center' key={tech}>
-                            <p className='lg:text-5xl md:text-3xl text-2xl text-third'>{tech}</p>
+                            <p className='lg:text-5xl md:text-3xl text-2xl text-fourth/30'>{tech}</p>
                             <p className='text-fourth md:text-2xl text-lg sm:mt-2'>{location.state.technologies[tech]}</p>
                         </div>
                     )}
