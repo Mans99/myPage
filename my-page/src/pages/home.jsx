@@ -12,7 +12,7 @@ const Home = () => {
     }, [])
 
     const [text] = useTypewriter({
-        words: ['Photografer', 'Foodie', 'Vikings fan', 'Coffee nerd', 'Amateur mixologist', 'Sourdough dad', 'Half half-marathon runner', 'Home cook'],
+        words: ['Photografer', 'Foodie', 'Minnesota Vikings supporter', 'Coffee nerd', 'Amateur mixologist', 'Sourdough dad', 'Half half-marathon runner', 'Home cook'],
         loop: {},
     });
 
