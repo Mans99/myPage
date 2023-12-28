@@ -21,7 +21,7 @@ const Home = () => {
 
         <div className="flex justify-center max-h-screen w-screen">
             <div className="flex flex-col items-center w-full h-full">
-                <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-16 md:pt-5 pt-0 text-center w-full h-fit">
+                <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-10 md:pt-5 pt-0 text-center w-full h-fit">
                     <div className="flex md:justify-end justify-center w-full md:h-[450px] h-[200px]">
                         <div className="flex flex-col justify-center h-full w-fit">
                             <img alt="name" src={Me} className="object-cover w-[200px] h-[200px]  md:w-[350px] lg:w-[450px] md:h-[350px] lg:h-full rounded-full" />
