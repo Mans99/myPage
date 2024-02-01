@@ -12,7 +12,7 @@ const Home = () => {
     }, [])
 
     const [text] = useTypewriter({
-        words: ['Photografer', 'Foodie', 'Minnesota Vikings supporter', 'Coffee nerd', 'Amateur mixologist', 'Sourdough dad', 'Half half-marathon runner', 'Home cook'],
+        words: ['Photografer', 'Foodie', 'Minnesota Vikings Supporter', 'Coffee Nerd', 'Amateur Mixologist', 'Sourdough Baker', 'Home cook'],
         loop: {},
     });
 
@@ -21,17 +21,17 @@ const Home = () => {
 
         <div className="flex justify-center max-h-screen w-screen">
             <div className="flex flex-col items-center w-full h-full">
-                <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-10 md:pt-5 pt-0 text-center w-full h-fit">
-                    <div className="flex md:justify-end justify-center w-full md:h-[450px] h-[200px]">
+                <div className="flex lg:space-x-16 md:space-x-12  sm:space-x-0 md:flex-row flex-col sm:justify-center items-center lg:pt-5 md:pt-5 pt-0 text-center w-full h-fit">
+                    <div className="flex md:justify-end justify-center w-full md:h-[350px] h-[200px]">
                         <div className="flex flex-col justify-center h-full w-fit">
-                            <img alt="name" src={Me} className="object-cover w-[200px] h-[200px]  md:w-[350px] lg:w-[450px] md:h-[350px] lg:h-full rounded-full" />
+                            <img alt="name" src={Me} className="object-cover w-[200px] h-[200px]  md:w-[350px] lg:w-[350px] md:h-[350px] lg:h-full rounded-full" />
                         </div>
                     </div>
                     <div className="flex sm:pt-10 pt-5 sm:items-center sm:text-center  md:items-start md:text-left  flex-col w-full ">
                         <p className="font-bold text-fourth lg:text-8xl sm:text-6xl mb-5 text-5xl whitespace-pre-wrap">{`Hello, \nI'm Måns!`}</p>
                         <h1>
                             <div>
-                                <span className="lg:text-4xl sm:text-2xl text-lg text-fourth">Software Developer,</span>
+                                <span className="lg:text-4xl sm:text-2xl text-lg text-fourth">ML/Software Developer,</span>
                             </div>
                             <span className="lg:text-4xl sm:text-2xl text-lg text-fourth sm:text-left">Designer and {text}</span>
                             <span className="text-fourth lg:text-4xl sm:text-2xl text-lg">

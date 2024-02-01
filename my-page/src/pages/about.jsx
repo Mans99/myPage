@@ -18,9 +18,9 @@ export default function about() {
             <div className='flex flex-col justify-center items-center w-full h-full pt-7'>
                 <div className='flex justify-center items-center w-2/3 h-fit'>
                     <p className='text-xl text-center mb-5 text-fourth whitespace-pre-wrap'>
-                        {`I am a 24 year old swede currently trying to survive my fourth year of college. There I hope to get a M.Sc Information- & Communication technologies degree with an emphasis on Software development. If I had  to describe myself I would say that I am a positive and curious person with a wide array of interests. Living by the mantra that things become more enjoyable the more you know about them.
-                        \nRecently I've decided to try to put what I learnt into practice which is why I created this website, in order to display them to the world.
-                        \nIf you'd like to know more I suggest you download my cv or, even better, hit me up with an e-mail.`}
+                        {`I am a 24-year-old Swede pursuing an engineering degree in information- & Communication Technologies. Currently, I'm in my fourth year looking to graduate with a master's in Software Development. In the future, I hope to work in the field of AI and help harness the possibilities it presents.
+                        \nI created this website partly as a challange for myself and also as a way to display my projects to the world. In the future most projects will be centered around Machine Learning, so if that interests you be sure to check in every so often:) 
+                        \nIf you'd like to know more I suggest you download my CV or, even better, hit me up with an e-mail.`}
                  </p>
                 </div>
             </div>

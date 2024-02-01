@@ -10,7 +10,7 @@
     },
     "Wild West Duel" : {
         "src" : "/Wild_west/",
-        "description": "An android game produced as a project for school. The goal was to use the different sensors a phone has in order to interact with the application. Wild West Duel is a game where you are in a gun duel using your phone as the gun, you can challenge your friends online as well.",
+        "description": "An Android game produced as a project for school. The goal was to use the different sensors a phone has in order to interact with the application. Wild West Duel is a game where you are part of a gun duel. Using your phone as the gun, it puts your reactions to the test. To play you lower your phone, pointing it downwards, and a countdown starts. This is followed by a start signal, as fast as you can you shold raise the phone, pointing it horizontally against your target. If you'd like you can challenge your friends online as well, fastest time wins.",
         "pictures": [ "home_screen_background.jpg", "poster.png", "create_join.png", "gun_view.png", "insert_matchcode.png", "matchcode.png", "result_view.png"],
         "git": "https://github.com/Mans99/WildWestDuel",
         "technologies": {"Language" : "Java", "Frameworks" : "Android", "Technology":"FireBase"},
